@@ -129,7 +129,7 @@ int main(int argc, char *argv[]){
 		    	
 		    particles_amount.push_back(J*dt);
 		    particles_radius.push_back(r_c);
-		    v = D_O[p]*(C_O[p]-C_Os[p])*rho_LBE[p]*V_PbO/M_O/r_c*10;
+		    v = D_O[p]*(C_O[p]-C_Os[p])*rho_LBE[p]*V_PbO/M_O/r_c;
 		    particles_rate.push_back(v);
             size = particles_amount.size()-1;
 		} else {
@@ -138,7 +138,7 @@ int main(int argc, char *argv[]){
         }
 		for (int i=0; i<size; i++) {
 		    particles_radius[i] += particles_rate[i]*dt;
-            v = D_O[p]*(C_O[p]-C_Os[p])*rho_LBE[p]*V_PbO/M_O/particles_radius[i]*10;
+            v = D_O[p]*(C_O[p]-C_Os[p])*rho_LBE[p]*V_PbO/M_O/particles_radius[i];
 		    particles_rate[i] = v;
 		}
         //counter = 0;
