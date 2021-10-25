@@ -17,7 +17,7 @@ int main(int argc, char *argv[]){
 	double V_PbO = M_PbO/rho_PbO; //m**3/mole
 	double M_O = 0.016; // kg/mol
 	double pi = 3.1415;
-	double r_c = 1e-9; //m
+	double r_c = 1e-9; //m //requires special attention
 	double dt = 1.0; //s
 	double tmax = 13.33*60*60; //s
 	int N = (int) (tmax/dt); // number of timesteps
