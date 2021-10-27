@@ -1,0 +1,8 @@
+This code solves equations on PbO particle size distribution function, reproducing results from "Gladinez K. et al. Nucleation and growth of lead oxide particles in liquid lead-bismuth eutectic //Physical Chemistry Chemical Physics. – 2017. – Т. 19. – №. 40. – С. 27593-27602." article.
+
+1. To compile program enter 'make' command
+2. To launch one can use simple './a.out > file_with_results' command or for laung on supercomputers 'sbatch script.sh'
+3. In main.cpp file the calculation scheme is implemented
+4. In read.cpp/read.hpp given data of reference oxygen concentration is approximated
+
+Created by Daniil Kolotinskii and Vladislav Nikolaev
