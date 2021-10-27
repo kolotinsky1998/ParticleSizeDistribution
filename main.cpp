@@ -45,7 +45,6 @@ int main(int argc, char *argv[]){
 	////// used parameters ////////////////
 	///////////////////////////////////////
 	
-<<<<<<< HEAD
 	double J_0 = 1e35; //How many nuclei are generated in unit volume in unit time (pre-exponential factor) [nuclei/m**3/s]
 	const double rho_PbO = 9450; //Density of solid PbO [kg/m**3]
 	const double M_PbO = 0.22320; //Molecular mass of PbO [kg/mole]
@@ -66,28 +65,6 @@ int main(int argc, char *argv[]){
 	const double N_A = 6.02e23; // Avogadro's constant [1/mole]
 	double Z; //Zeldovich constant 
 	double k = 1.2; //
-=======
-	double J_0 = 1e35; //nuclei/m**3/s
-	double rho_PbO = 9450; //kg/m**3
-	double M_PbO = 0.22320; //kg/mol
-	double V_PbO = M_PbO/rho_PbO; //m**3/mole
-	double M_O = 0.016; // kg/mol
-	double pi = 3.1415;
-	double r_c = 1e-9; //m //requires special attention
-	double dt = 1.0; //s
-	double tmax = 13.33*60*60; //s
-	int N = (int) (tmax/dt); // number of timesteps
-	int n = 200; // number of grid nodes
-	double T_0 = 723; //K
-	double T_end = 563; //K
-	double R = 8.31; //J/mole/K
-	double k_B = 1.38e-23; // J/K/mol
-	double C_O_0 = 1e-4; //wt %
-	double M_LBE = 0.208; // kg/mole
-	double N_A = 6.02e23;
-	double Z;
-	double k = 1.2;
->>>>>>> 6a35c52ed0c30cba8d3a2171009b71f736ceaecf
 
 	///////////////////////////////////////
 	////// used time dependent parameters /
